@@ -1,5 +1,5 @@
 body {
-	background: #eda8a8;
+	background: #4682B4;
 }
 
 nav ul {
@@ -7,7 +7,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color:rgb(128, 0, 41);
+	background-color:rgb(176, 196, 222);
 	display: table;
 	width: 100%;
 }
@@ -18,19 +18,19 @@ nav li {
 
 li a {
 	display: block;
-	color: rgb(228, 213, 213);
+	color: rgb(135, 206, 235);
 	text-align: center;
 	padding: 30px 30px;
 	text-decoration: none;
 }
 
 li a:hover {
-	background-color:rgb(222, 153, 196);
+	background-color:rgb(30, 144, 255);
 }
 
 h2 a {
 	padding: 33px 25px;
-	color: rgb(235, 189, 189);
+	color: rgb(65, 105, 225);
 	text-decoration: none;
 }
 
@@ -63,11 +63,11 @@ img {
 
 aside {
 	left: 10px;
-	border: 1px solid rgb(236, 78, 78);
+	border: 1px solid rgb(123, 104, 238);
 	padding: 15px;
 	max-width: 80%;
 	position: relative;
-	border-color:rgb(0, 90, 128);
+	border-color:rgb(175, 238, 238);
 	border-width: 5px;
 	font-size: 18px;
 }
@@ -76,7 +76,7 @@ footer {
 	position: relative;
 	width: 100%;
 	bottom: -100px;
-	background-color: rgb(234, 145, 213);
+	background-color: rgb(95, 158, 160);
 }
 
 footer p {
