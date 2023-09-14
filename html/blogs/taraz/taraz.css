@@ -1,5 +1,5 @@
-*{font-family: 'sans-serif';}
-*{background-image: 'https://img.freepik.com/premium-photo/beige-dirty-empty-old-paper-background-paper-texture_255485-443.jpg'}
+*{font-family: 'Gotham';}
+*{background-color:#91966D}
 
 p:hover{
     color: #EEA429;
@@ -8,10 +8,7 @@ p:hover{
 p{
     color: #EEA429;
 }
-*{
-    font-family: 
-    'Gotham'
-}
+
 
 
 .cruel {
