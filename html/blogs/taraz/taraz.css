@@ -1,8 +1,8 @@
 *{font-family: 'sans-serif';}
-*{background-image: 'https://img.freepik.com/premium-photo/beige-dirty-empty-old-paper-background-paper-texture_255485-443.jpg';}
+*{background-image: 'https://img.freepik.com/premium-photo/beige-dirty-empty-old-paper-background-paper-texture_255485-443.jpg'}
 
 p:hover{
-    color: #E24613;
+    color: #EEA429;
 }
 
 p{
@@ -10,16 +10,16 @@ p{
 }
 *{
     font-family: 
-    'sculptors hand'
+    'Gotham'
 }
 
 
 .cruel {
-    color: antiquewhite;
+    color: #70644A;
 }
 
 [href]{
-    color: #f9bf91;
+    color: #E24613;
 }
 
 img[src="twimg"]{
