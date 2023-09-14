@@ -1,0 +1,47 @@
+*{font-family: 'sans-serif';}
+*{background-image: 'https://img.freepik.com/premium-photo/beige-dirty-empty-old-paper-background-paper-texture_255485-443.jpg';}
+
+p:hover{
+    color: #E24613;
+}
+
+p{
+    color: #EEA429;
+}
+*{
+    font-family: 
+    'sculptors hand'
+}
+
+
+.cruel {
+    color: antiquewhite;
+}
+
+[href]{
+    color: #f9bf91;
+}
+
+img[src="twimg"]{
+    height: 45px;
+}
+
+
+
+
+#dog{
+    color: #70644A ;
+}
+
+.cat{
+    font-weight: 100;
+}
+
+
+h1{
+    font-size: 40px;
+}
+table{
+   border: #DBD1B8; 
+}
+
