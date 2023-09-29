@@ -18,7 +18,7 @@ font-family:"Inter", sans-serif ;
   font-weight:800;
   text-transform: uppercase;
   font-size:12px;
-  color:#004d40;
+  color:#f7dfd8;
   text-align:center;
 }
 
@@ -30,42 +30,42 @@ nav{
 }
 
 main{
-    background:  #20b2aa;
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2014-04/campaign_images/webdr05/27/1/31-candid-photos-of-marilyn-monroe-in-new-york-1-13566-1398577107-0_big.jpg?resize=1200:*);
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #sidebar{
-    background: #ffa500;
+    background-image: url(https://www.galerieprints.com/wp-content/uploads/2016/10/517721336-Marilyn-Monroe-Puckers-for-Photographers-1.jpg);
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #content1{
-    background: #769293;
+    background-image: url(https://media.houseandgarden.co.uk/photos/61894bd6f6acdd8ba445671d/master/w_320%2Cc_limit/MMonroe_EL_18apr12_pa_bt.jpg);
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #content2{
-    background: #6b58a7;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURZ7Fs3wTyK6gnvI2zGoS0WW_Y1S9Ww39rA&usqp=CAU);
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #content3{
-    background:#ee5b2f ;
+    background-image: url(https://www.all-about-photo.com/images/articles/ART-89-640-H-12.jpg);
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 footer {
-    background: #fdfdd0;
+    background-image: url(https://www.hollywoodreporter.com/wp-content/uploads/2011/11/marilyn_monroe_pool_one_a_l.jpg?w=2000&h=1126&crop=1);
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
