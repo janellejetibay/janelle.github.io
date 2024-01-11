@@ -1,0 +1,43 @@
+*{font-family: 'sans-serif';}
+*{background-color: #e8beac;}
+
+a:hover{
+    color: #593123;
+}
+
+p{
+    color: #b66837;
+}
+*{
+    font-family: 
+    'Futura'
+}
+
+
+.cruel {
+    color: antiquewhite;
+}
+
+[href]{
+    color: #f9bf91;
+}
+
+img[src="Slaunger"]{
+    height: 50px;
+}
+
+
+
+
+#dog{
+    color: #513021 ;
+}
+
+.cat{
+    font-weight: 100;
+}
+
+
+h1{
+    font-size: 40px;
+}

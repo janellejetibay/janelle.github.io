@@ -1,0 +1,44 @@
+*{font-family: 'Gotham';}
+*{background-color:#91966D}
+
+p:hover{
+    color: #492f16;
+}
+
+p{
+    color: #492f16;
+}
+
+
+
+.cruel {
+    color: #70644A;
+}
+
+[href]{
+    color: #E24613;
+}
+
+img[src="twimg"]{
+    height: 45px;
+}
+
+
+
+
+#dog{
+    color: #70644A ;
+}
+
+.cat{
+    font-weight: 100;
+}
+
+
+h1{
+    font-size: 40px;
+}
+table{
+   border: #DBD1B8; 
+}
+

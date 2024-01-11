@@ -1,0 +1,88 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+.container {
+display: grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr ;
+grid-template-areas:
+"nav nav nav nav"
+"sidebar main main main"
+"sidebar content1 content2 content3"
+"sidebar footer footer footer"; 
+grid-gap: 0.2rem;
+font-family:"Inter", sans-serif ;
+  font-weight:800;
+  text-transform: uppercase;
+  font-size:12px;
+  color:#f7dfd8;
+  text-align:center;
+}
+
+nav{
+    background: #c39797;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+main{
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2014-04/campaign_images/webdr05/27/1/31-candid-photos-of-marilyn-monroe-in-new-york-1-13566-1398577107-0_big.jpg?resize=1200:*);
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#sidebar{
+    background-image: url(https://www.galerieprints.com/wp-content/uploads/2016/10/517721336-Marilyn-Monroe-Puckers-for-Photographers-1.jpg);
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content1{
+    background-image: url(https://media.houseandgarden.co.uk/photos/61894bd6f6acdd8ba445671d/master/w_320%2Cc_limit/MMonroe_EL_18apr12_pa_bt.jpg);
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURZ7Fs3wTyK6gnvI2zGoS0WW_Y1S9Ww39rA&usqp=CAU);
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3{
+    background-image: url(https://www.all-about-photo.com/images/articles/ART-89-640-H-12.jpg);
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    background-image: url(https://www.hollywoodreporter.com/wp-content/uploads/2011/11/marilyn_monroe_pool_one_a_l.jpg?w=2000&h=1126&crop=1);
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "contemt3"
+        "footer";
+    }
+
+}
