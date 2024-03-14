@@ -1,0 +1,25 @@
+table, td  {
+    border: 3px solid black;
+  }
+.text{
+    float: right;
+    margin-top: 20px;
+}  
+
+.img{
+    size: 20px 20px 20px 20px;
+}
+
+.more{
+    float: left;
+}
+
+div {
+    position: relative;
+    display: inline-block;
+  }
+  
+  img {
+    vertical-align: bottom;
+  }
+  

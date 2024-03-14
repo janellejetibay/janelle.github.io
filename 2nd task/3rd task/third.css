@@ -1,0 +1,84 @@
+.topnav {
+    background-color: lightgray;
+    overflow: hidden;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+  }
+  
+
+  .topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+  .topnav a.active {
+    background-color: red;
+    color: white;
+    width: 150px;
+    text-align: center;
+  }
+
+  .redborder{
+    border: 2px solid red;
+    width: fit-content;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+
+  .button1{
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: blue;
+    margin: 0px;
+    border: 2px solid lightgray;
+    width: 145px;
+    margin-bottom: 0;
+  }
+
+  .button2{
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: white;
+    margin: 0px;
+    border: 2px solid lightgray;
+    width: 145px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+.you{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer{
+  width: 700px;
+  height: 40px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+
+.btn{
+  margin-left: 100px;
+}
