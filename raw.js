@@ -1,7 +1,7 @@
-const now = new Date();
+//const now = new Date();
 
-let mode = "time";
-const Now = new Date();
+let mode = "full";
+//const Now = new Date();
 const output = document.getElementById("output");
 const fullBtn = document.getElementById("full");
 const dateBtn = document.getElementById("date");
@@ -22,7 +22,7 @@ setInterval(update, 100);
 update();
 
 function update() {
-  output.textContect = format(mode);
+  output.textContent = format(mode);
 }
 
 function format(formatMode) {
@@ -30,11 +30,11 @@ function format(formatMode) {
 
   switch (formatMode) {
     case "time":
-      return now.toLocaleTimeString() + "-" + now.getMilliseconds();
+      return now.toLocaleTimeString() + "." + now.getMilliseconds();
     case "date":
-      return now.toLocaleTimeString();
+      return now.toLocaleDateString();
     case "full":
-      return now.toLocaleTimeString() + " " + now.toLocaleTimeString();
+      return now.toLocaleDateString() + " " + now.toLocaleTimeString();
     default:
       return now.toLocaleTimeString();
   }
