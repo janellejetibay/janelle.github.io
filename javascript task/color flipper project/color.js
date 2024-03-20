@@ -1,14 +1,14 @@
-var container = document.querySelector(".container");
-var colorCard = document.querySelector(".color-card");
-var btn = document.querySelector("button");
-var hex = document.querySelector("span");
+let container = document.querySelector(".container");
+let colorCard = document.querySelector(".color-card");
+let btn = document.querySelector("button");
+let hex = document.querySelector("span");
 
 function getNewColor() {
-  var symbols = "01234567890ABCDEF";
+  let symbols = "01234567890ABCDEF";
 
-  var color = "#";
+  let color = "#";
 
-  for (var i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i++) {
     color = color + symbols[Math.floor(Math.random() * 16)];
   }
 
