@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      .container {
+        width: 80vmin;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 120px;
+        background-color: #d2042d;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .tabs h3 {
+        background-color: #e4e9fd;
+        text-align: center;
+        padding: 15px 0;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .tab-content {
+        background-color: #ffffff;
+        padding: 50px 40px;
+      }
+      .tab-content h4 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #d2042d;
+        font-weight: 600;
+      }
+      .tab-content p {
+        text-align: justify;
+        line-height: 1.9;
+        letter-spacing: 0.4px;
+        color: #d2042d;
+      }
+      .tab-content > div {
+        display: none;
+      }
+      .tab-content > div.active {
+        display: block;
+      }
+      .tabs h3.active {
+        background-color: #ffffff;
+        color: #d2042d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <h3 class="active">feedback</h3>
+        <h3>feedback</h3>
+        <h3>feedback</h3>
+      </div>
+      <div class="tab-content">
+        <div class="active">
+          <h4>Toregali Toreali</h4>
+          <p>
+            Janelle's professionalism and expertise were truly impressive. She
+            not only delivered our project ahead of schedule but also went above
+            and beyond to ensure that it exceeded our expectations. Her
+            attention to detail and problem-solving skills were evident in every
+            aspect of her work. We couldn't be happier with the results and look
+            forward to collaborating with her again in the future.
+          </p>
+        </div>
+        <div>
+          <h4>Donald Trump</h4>
+          <p>
+            Working with Janelle was an absolute pleasure from start to finish.
+            Not only did she possess a deep understanding of the latest
+            technologies, but she also took the time to listen to our needs and
+            tailor her solutions accordingly. Her innovative approach to
+            problem-solving resulted in a product that not only met but
+            surpassed our requirements. I would highly recommend Janelle to
+            anyone in need of top-notch IT services.
+          </p>
+        </div>
+        <div>
+          <h4>Barak Obama</h4>
+          <p>
+            Janelle's commitment to excellence is truly commendable. Despite
+            facing tight deadlines and complex challenges, she remained calm,
+            focused, and determined to deliver nothing but the best for her
+            clients. Her communication skills were exceptional, keeping us
+            informed every step of the way and ensuring that our project stayed
+            on track. It's rare to find someone as talented and dedicated as
+            Janelle, and we feel fortunate to have had the opportunity to work
+            with her.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="tab.js"></script>
+  </body>
+</html>

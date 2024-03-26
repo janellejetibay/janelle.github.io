@@ -4,7 +4,7 @@ let btn = document.querySelector("button");
 let hex = document.querySelector("span");
 
 function getNewColor() {
-  let symbols = "01234567890ABCDEF";
+  let symbols = "0123456789ABCDEF";
 
   let color = "#";
 

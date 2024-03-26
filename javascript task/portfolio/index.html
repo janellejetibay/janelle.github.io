@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" onclick="closeSidebar()">Close</a>
+      <a href="#about">about me</a>
+      <a href="#gallery">image gallery</a>
+      <a href="C:\Users\User\prototype\janellejetibay.github.io\javascript task\tabs\tab.html">feedback</a>
+      <a href="mailto:john@j-wilson.com" class="button">
+    <span class="availability fontawesome-remove"> Currently Unavailable</span>
+    <span class="hire-me">Hire Me</span>
+  </a>
+    </div>
+    <div class="content">
+      <button onclick="openSidebar()">open</button>
+    </div>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d2042d;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+.active {
+  background-color: #111111;
+
+  
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="C:\Users\User\prototype\janellejetibay.github.io\javascript task\tabs\tab.html">Feedbacks</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+    <style>
+body {
+  padding: 55px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Janelle</h2>
+            <p class="hero_desc">
+              I am an IT specialist
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Hey everyone! I'm Janelle, a 16-year-old with a passion for technology that's as bright as the pixels on a high-definition screen. While some might think of a typical teenager spending their days lost in social media feeds, I'm more at home delving into the depths of coding languages and exploring the intricacies of cybersecurity.
+
+Ever since I can remember, I've been captivated by computers and their endless potential. I love unraveling the mysteries of software and hardware, understanding how they work together to create the digital world we live in. My fascination with IT isn't just a passing phase – it's a burning desire to become a force to be reckoned with in the tech industry.
+
+You'll often find me buried in lines of code, crafting programs and applications that bring my ideas to life. Whether it's building websites from scratch or troubleshooting complex networking issues, I thrive on the challenge of solving problems and pushing the boundaries of what's possible with technology.
+                        
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Cattle</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Kinetic Kraft</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Basqa (clothes brand)</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">Autumn Music Festival</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">Color Flipper</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Learn Logic Academy </h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: center;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: #d2042d;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: center;
+      top: 0;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: #d2042d;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <h2 style="text-align: center" id="gallery">image gallery</h2>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="C:\Users\User\Downloads\1x\poster 3.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img
+          src="C:\Users\User\Downloads\1x\Artboard 4.png"
+          style="width: 50%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="C:\Users\User\Downloads\1x\racket.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="C:\Users\User\Downloads\1x\Grids.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img
+          src="C:\Users\User\Downloads\1x\Offset Pathth.png"
+          style="width: 50%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img
+          src="C:\Users\User\Pictures\Screenshots\Снимок экрана (20).png"
+          style="width: 50%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_woods.jpg"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Autumn Music Festival"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_5terre.jpg"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="Kinetic Kraft"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_mountains.jpg"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Space Force Rockets"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_lights.jpg"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="Pixel Arts"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_nature.jpg"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="Offset Path"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="img_snow.jpg"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="Color Flipper"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+
+  </body>
+  <video width="400" controls style="padding-bottom: 200px;">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  </video>
+
+  
+
+</html>
