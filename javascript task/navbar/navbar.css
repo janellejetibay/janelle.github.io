@@ -1,80 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-hieght: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  font-family: sans-serif;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-a {
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  border-bottom: 2px solid black;
+}
+
+.logo a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.logo {
-  font-size: 1.8rem;
-  color: rgb(5, 5, 116);
-  padding-left: 20px;
-}
-
-.sidebar {
-  padding-right: 20px;
+  font-size: 20px;
+  margin-left: -37px;
   cursor: pointer;
 }
 
-.sidebar .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: black;
+.nav a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-right: 50px;
+  color: black;
+  font-weight: 550;
+  position: relative;
+  cursor: pointer;
 }
 
-.nav__link {
-  position: fixed;
-  width: 94%;
-  top: 5rem;
-  left: 18px;
-  background-color: lightblue;
+.nav a::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: black;
+  transition: all ease 0.4s;
 }
 
-.nav__link a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.hide {
-  display: none;
-}
-
-@media screen and (min-width: 600px) {
-  .nav__link {
-    display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-  }
-
-  .nav__link a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .sidebar {
-    display: none;
-  }
+.nav a:hover::before {
+  width: 100%;
 }

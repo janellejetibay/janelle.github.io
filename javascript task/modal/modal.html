@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Popup</title>
+    <style>
+      /* Styling for popup */
+      .popup {
+        display: none; /* Hide popup by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #333333;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="openPopup()">Open Popup</button>
+
+    <div id="myPopup" class="popup">
+      <h2>This is a simple popup!</h2>
+      <p>Click the button below to close this popup.</p>
+      <button onclick="closePopup()">Close Popup</button>
+    </div>
+
+    <script>
+      function openPopup() {
+        document.getElementById("myPopup").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("myPopup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
