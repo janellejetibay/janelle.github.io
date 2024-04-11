@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabs</title>
+    <link rel="stylesheet" type="text/css" href="tabs.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js"></script>
+    
+    </div>
+  </head>
+  <header id="home">
+      <div class="container">
+        <div class="logo">
+          <h1
+            style="
+              margin-left: 17px;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            "
+          >
+            NurSkin
+          </h1>
+        </div>
+        <nav>
+          <ul style="margin-top: -69px">
+            <a href="#home"><li>Home</li></a>
+            <a href="C:\Users\User\prototype\janellejetibay.github.io\WEBPROJECTFAIR\about.html"><li>About Us</li></a>
+            <a href="C:\Users\User\prototype\janellejetibay.github.io\WEBPROJECTFAIR\problem.html"><li>Problems</li></a>
+            <a href="C:\Users\User\prototype\janellejetibay.github.io\WEBPROJECTFAIR\feedback.html"><li>Feedback</li></a>
+            <a href="C:\Users\User\prototype\janellejetibay.github.io\WEBPROJECTFAIR\cosmetolog.html"><li>Cosmetologs</li></a>
+            <li>
+              <a
+                href="http://127.0.0.1:5500/Login-Register/REGISTER.html"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="overlay" class="overlay"></div>
+      <hr> 
+
+
+  
+  <section id="feedback">
+    <body style="padding: 20px">
+    <h1 class="title">What Out Customers Say?</h1>
+    <br />
+    <br />
+    <div class="tabContainer">
+      <div class="buttonContainer">
+        <button onclick="showPanel(0,'#B5D6B8')">John D.</button>
+        <button onclick="showPanel(1,'#B5D6B8')">Sarah M.</button>
+        <button onclick="showPanel(2,'#B5D6B8')">David R.</button>
+        <button onclick="showPanel(3,'#B5D6B8')">Emma W.</button>
+      </div>
+      <div class="tabPanel">
+        "I love the clean layout of the website! It's easy to navigate, and I
+        found exactly what I was looking for without any hassle. The product
+        descriptions are detailed, and the checkout process was smooth. Overall,
+        a great online shopping experience!"
+      </div>
+      <div class="tabPanel">
+        "I'm impressed with the website's responsiveness and
+        mobile-friendliness. Whether I'm browsing on my laptop or smartphone,
+        the site loads quickly, and the images are crisp. Plus, the search
+        function makes it convenient to find specific products. Definitely my
+        go-to for skincare shopping!"
+      </div>
+      <div class="tabPanel">
+        "The website's design is visually appealing and reflects the brand's
+        commitment to quality and professionalism. I appreciate the helpful
+        skincare tips and resources available, which add value to the shopping
+        experience. It's evident that the team behind the website cares about
+        customer satisfaction!"
+      </div>
+      <div class="tabPanel">
+        "As someone with sensitive skin, I appreciate the emphasis on natural
+        and organic products on this website. The ingredient lists are
+        transparent, allowing me to make informed choices about the products I
+        purchase. The customer reviews and ratings are also helpful in guiding
+        my decisions. Keep up the great work!"
+      </div>
+    </div>
+
+    <script src="tabs.js"></script>
+  </body>
+</html>
+
+<style>
+  .title {
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+  }
+  .tabContainer {
+    width: 100%;
+    height: 350px;
+  }
+  .tabContainer .buttonContainer {
+    height: 15%;
+  }
+  .tabContainer .buttonContainer button {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+  }
+  .tabContainer .buttonContainer button:hover {
+    background-color: #d7d4d4;
+  }
+  .tabContainer .tabPanel {
+    height: 85%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+  }
+</style>
+
+<script>
+  var tabButtons = document.querySelectorAll(
+    ".tabContainer .buttonContainer button"
+  );
+  var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
+
+  function showPanel(panelIndex, colorCode) {
+    tabButtons.forEach(function (node) {
+      node.style.backgroundColor = "";
+      node.style.color = "";
+    });
+    tabButtons[panelIndex].style.backgroundColor = colorCode;
+    tabButtons[panelIndex].style.color = "white";
+    tabPanels.forEach(function (node) {
+      node.style.display = "none";
+    });
+    tabPanels[panelIndex].style.display = "block";
+    tabPanels[panelIndex].style.backgroundColor = colorCode;
+  }
+  showPanel(0, "#f44336");
+</script>
+  </section>
+  

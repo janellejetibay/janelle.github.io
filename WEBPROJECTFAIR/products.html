@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="zona.css" />
+    <div class="container">
+      <h1 class="heading">Image Gallery</h1>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpoqQ8N3E_g9aOMNNl49YmMcZKNhEvsWiuGV3yEn2B2gnBxjq5p9b0HIz6xFK3RPF9hD4&usqp=CAU"
+            alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://beautybio.com/cdn/shop/articles/WinterReset_BlogHeader_25f32468-a31e-41cf-848c-c48494e5f9d3.jpg?v=1704903475"
+            alt="sunset behind San Francisco city skyline"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://juicebeauty.com/cdn/shop/files/catergory-skincare-2000x2000.jpg?v=1675906020&width=320"
+            alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://www.beautypie.com/_next/image?url=https%3A%2F%2Fd2csxpduxe849s.cloudfront.net%2Fmedia%2F192DFBC7-8953-4970-B7753853A910CFA9%2F7F01FEE8-B016-416A-A5875838A8EB555B%2F9D946FC4-6FDA-4620-9EA82D9F65FBCD70%2FOTF%2520BETA-acq-kits-nmhp-tile%2520-1.jpg&w=1920&q=75"
+            alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://assets.vogue.com/photos/6601b47c546558ebaa6b1589/master/pass/Lip_Benefits_01_1280x.jpg"
+            alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://images.ctfassets.net/prxuf37q3ta2/6MVYywsWKzukL4KQc8pVWF/a27db323df348fd56c9807144c83c576/MOSAIC_TILE_929X929_2_SB-35913.jpg?w=1024"
+            alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+          />
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+      :root {
+        /* Base font size */
+        font-size: 10px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #fafafa;
+      }
+
+      .container {
+        max-width: 100rem;
+        margin: 0 auto;
+        padding: 0 2rem 2rem;
+      }
+
+      .heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        padding: 3.5rem 0;
+        color: #1a1a1a;
+      }
+
+      .heading span {
+        display: block;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        /* Compensate for excess margin on outer gallery flex items */
+        margin: -1rem -1rem;
+      }
+
+      .gallery-item {
+        /* Minimum width of 24rem and grow to fit available space */
+        flex: 1 0 24rem;
+        /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+        margin: 1rem;
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+      }
+
+      .gallery-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 400ms ease-out;
+      }
+
+      .gallery-image:hover {
+        transform: scale(1.15);
+      }
+
+      @supports (display: grid) {
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+          grid-gap: 2rem;
+        }
+
+        .gallery,
+        .gallery-item {
+          margin: 0;
+        }
+      }
+    </style>
+  </body>
+</html>
